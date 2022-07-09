@@ -154,6 +154,8 @@ yay -S visual-studio-code-bin --noconfirm 1> /dev/null
 # Pre install useful vscode extensions.
 echo -e "\nInstalling flutter extension..."
 code --install-extension dart-code.flutter 1> /dev/null
+echo -e "Installing python extension..."
+code --install-extension ms-python.python 1> /dev/null
 echo -e "${GREEN}Installing Visual Studio Code successful.${NO_COLOR}\n"
 
 # Install flutter.
