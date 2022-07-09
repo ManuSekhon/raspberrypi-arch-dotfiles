@@ -132,8 +132,8 @@ echo -e "Installing ZSH..."
 yay -S zsh --noconfirm 1> /dev/null
 
 # Use ZSH as default shell.
-echo -e "Changing default shell to ZSH..."
-sudo chsh -s /bin/zsh 1> /dev/null
+echo -e "Changing default shell to ZSH... ${RED}(Password required)${NO_COLOR}"
+sudo -u $USER chsh -s $(which zsh)
 
 # Oh my ZSH variant for pretty pre-configured settings.
 echo -e "Installing Oh My Zsh..."
