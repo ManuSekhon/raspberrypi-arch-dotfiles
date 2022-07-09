@@ -117,7 +117,7 @@ rm -rf get-pip.py 1> /dev/null
 
 # Use python virtual environment for projects.
 echo -e "Installing python virtualenv..."
-pip install virtualenv 1> /dev/null
+$HOME/.local/bin/pip install virtualenv 1> /dev/null
 
 echo -e "${GREEN}Installing python dependencies successful.${NO_COLOR}\n"
 
